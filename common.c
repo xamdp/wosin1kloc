@@ -76,6 +76,12 @@ void *memset(void *buf, char c, size_t n) {
 }
 
 
+void strcpy(char dest[], const char source[]) {
+	int i =0;
+	while ((dest[i] = source[i]) != '\0')
+		i++;
+}
+
 int strcmp(const char *s1, const char *s2) {
 	while (*s1 && *s2) {
 		if (*s1 != *s2)
