@@ -4,6 +4,10 @@
 Yet another repository for learning C, RISC-V and operating systems in general.  
 This repository will serve as my learning progress.  
 
+## TO DO:
+- re-implement memcpy, memset, and strcmp, printf ~ libc-impl
+- implement strcpy_s ~ testing
+- create tests for re-implemented functions
 
 ## My plan for this repo and my learning journey  
 
@@ -28,3 +32,5 @@ I want to properly organize my learning journey as how a real low-level develope
 ## Learned things so far...
 
 - I have managed to understand how does a strcpy works and re-implement it based on C Standard Library.
+
+
