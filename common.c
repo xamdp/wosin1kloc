@@ -75,6 +75,13 @@ void *memset(void *buf, char c, size_t n) {
 	return buf;
 }
 
+char *strcpy(char *dst, const char *src) {
+	char *d = dst;
+	while (*src)
+		*d++ = *src++;
+	*d = '\0';
+	return dst;
+}
 
 int strcmp(const char *s1, const char *s2) {
 	while (*s1 && *s2) {
