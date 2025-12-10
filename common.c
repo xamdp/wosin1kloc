@@ -76,10 +76,15 @@ void *memset(void *buf, char c, size_t n) {
 }
 
 
-void strcpy(char dest[], const char source[]) {
-	int i =0;
-	while ((dest[i] = source[i]) != '\0')
-		i++;
+char *strcpy(char *dst, const char *src) { // src is the only one have const, because it should not be modifiable
+	char *original_dst = dst; // store the original dst ptr
+	
+	while (*src) { // while *src is true
+		*original_dst++ = *src++; // asign what *src points to, to *original_dst and then increment both pointers
+	}
+	*original_dst = '\0'; // if *src is no longer true, set *original_dst to '\0', which makes it empty?
+
+	return dst;
 }
 
 int strcmp(const char *s1, const char *s2) {

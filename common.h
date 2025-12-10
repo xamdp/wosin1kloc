@@ -23,7 +23,7 @@ typedef uint32_t vaddr_t;
 void *memset(void *buf, char c, size_t n);
 void *memcpy(void *dst, const void *src, size_t n);
 
-void strcpy(char dest[], const char source[]);
+char strcpy(char *dst, const char *src); // instead of array, make it a pointer, and not should be void, because strcpy returns something
 
 int strcmp(const char *s1, const char *s2);
 void printf(const char *fmt, ...);
